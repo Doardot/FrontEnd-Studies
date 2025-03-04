@@ -1,11 +1,11 @@
 import React from "react";
 import './Note.css';
 
-function Note() {
+function Note(note) {
     return (
         <div className="note">
-            <h1>Title</h1>
-            <p>Content</p>
+            <h1>{note.title}</h1>
+            <p>{note.content}</p>
         </div>
     )
 }
