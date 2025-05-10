@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import LoginForm from './components/Login/Login';
+import LoginForm from './components/Login/LoginForm';
 
-let isLoggedIn = false;
+let isUserRegistered = false;
 
 function App() {
   return (
-    <div className="container">{
-      isLoggedIn ? <h1>Hello</h1> : <LoginForm/>
-    } </div>
+    <div className="container">
+      <LoginForm isRegistered={isUserRegistered}/>
+    </div>
   );
 }
 
